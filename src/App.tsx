@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Phone, 
-  Mail, 
-  MapPin, 
+  Mail,
   MessageCircle, 
   CheckCircle2, 
   ArrowRight, 
@@ -83,13 +82,7 @@ const PRODUCT_CATEGORIES: Product[] = [
     features: ["Punch-hole & loop handles", "Eco-friendly LDPE/HM options", "Brilliant multi-color printing"],
     svgType: "polybag"
   },
-  {
-    id: "food",
-    title: "Food Packaging",
-    description: "FDA-compliant food-grade packaging designed to maintain absolute freshness and extend shelf-life.",
-    features: ["Oxygen & moisture resistance", "Modified Atmosphere capable", "Aroma-locking capabilities"],
-    svgType: "food"
-  },
+  
   {
     id: "courier",
     title: "Courier Bags",
@@ -380,7 +373,7 @@ export default function App() {
               <a href="#products" className="text-slate-600 hover:text-blue-600 font-medium text-sm transition-colors">Products</a>
               <a href="#why-choose-us" className="text-slate-600 hover:text-blue-600 font-medium text-sm transition-colors">Why Us</a>
               <a href="#industries" className="text-slate-600 hover:text-blue-600 font-medium text-sm transition-colors">Industries</a>
-              <a href="#consultation" className="text-slate-600 hover:text-blue-600 font-medium text-sm transition-colors flex items-center gap-1 bg-amber-50 text-amber-800 px-2.5 py-1 rounded-full border border-amber-200/50">
+              <a href="#consultation" className="hover:text-blue-600 font-medium text-sm transition-colors flex items-center gap-1 bg-amber-50 text-amber-800 px-2.5 py-1 rounded-full border border-amber-200/50">
                 <Sparkles className="w-3.5 h-3.5" /> Consultation
               </a>
               <a href="#faq" className="text-slate-600 hover:text-blue-600 font-medium text-sm transition-colors">FAQs</a>
@@ -1090,9 +1083,7 @@ export default function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-slate-50 border-t border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 justify-center items-center">
             <div className="lg:col-span-5 space-y-8">
               <div className="space-y-4">
                 <span className="text-xs font-bold tracking-wider text-blue-600 uppercase block">Contact Factory</span>
@@ -1130,40 +1121,7 @@ export default function App() {
                     <span className="text-xs text-slate-500">Expect replies in 1-2 business hours.</span>
                   </div>
                 </div>
-
-                <div className="flex gap-4 pt-4 border-t border-slate-100">
-                  <div className="bg-slate-100 text-slate-800 p-3 rounded-xl h-fit">
-                    <MapPin className="w-5 h-5 text-blue-600" />
-                  </div>
-                  <div>
-                    <span className="text-xs text-slate-400 uppercase font-bold tracking-wider">Manufacturing Plant Address</span>
-                    <p className="text-slate-900 font-bold text-sm mt-0.5 leading-relaxed">
-                      Plot No. 42-A, Industrial Development Area, <br />
-                      Sector 4, Rohad Industrial Area, Haryana, India.
-                    </p>
-                  </div>
-                </div>
               </div>
-
-              {/* Map Placeholder */}
-              <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white p-2">
-                <div className="h-48 bg-slate-200 relative flex items-center justify-center rounded-xl overflow-hidden">
-                  <div className="absolute inset-0 bg-slate-100 flex flex-col items-center justify-center p-4 text-center">
-                    <MapPin className="w-8 h-8 text-red-500 animate-bounce mb-2" />
-                    <span className="font-bold text-slate-800 text-xs sm:text-sm">RK Packaging Plant Location</span>
-                    <span className="text-slate-500 text-[10px] mt-1">Rohad Industrial Sector (Near New Delhi Border)</span>
-                    <a 
-                      href="https://maps.google.com" 
-                      target="_blank" 
-                      rel="noreferrer" 
-                      className="mt-3 bg-slate-950 hover:bg-blue-600 text-white font-bold text-xs py-1.5 px-3 rounded-lg transition"
-                    >
-                      Open Google Maps
-                    </a>
-                  </div>
-                </div>
-              </div>
-
             </div>
 
             {/* Right Column: Direct Contact Form */}
@@ -1176,7 +1134,7 @@ export default function App() {
                   <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto" />
                   <h4 className="font-bold text-emerald-900 text-lg">Inquiry Received Successfully</h4>
                   <p className="text-sm text-emerald-700 max-w-sm mx-auto">
-                    Thank you for reaching out to RK Packaging. Our industrial consultation unit will compile pricing catalogs and call your registered number within 1 hour.
+                    Thank you for reaching out to RK Packaging. Our industrial consultation unit will compile pricing catalogs and call your registered number in few hours.
                   </p>
                 </div>
               ) : (
@@ -1278,7 +1236,7 @@ export default function App() {
                 Custom packaging manufacturing and strategic material consulting partner. We design high-barrier, long shelf-life pouches and bags compliant with absolute safety standards.
               </p>
               <div className="pt-2 text-xs text-slate-500">
-                <p>Plant Compliance Reg ID: #B2B-HARYANA-2011/985</p>
+                
                 <p>GSTIN: 06AABCR8392K1Z8</p>
               </div>
             </div>
@@ -1300,7 +1258,7 @@ export default function App() {
                 <li><a href="#products" className="hover:text-white transition">Standup Zipper Pouches</a></li>
                 <li><a href="#products" className="hover:text-white transition">Transparent Zip Lock Bags</a></li>
                 <li><a href="#products" className="hover:text-white transition">Custom Brand Printed Polybags</a></li>
-                <li><a href="#products" className="hover:text-white transition">Food-Grade Preservation Laminates</a></li>
+               
                 <li><a href="#products" className="hover:text-white transition">Heavy-Duty Courier & Shipping Envelopes</a></li>
               </ul>
             </div>
@@ -1404,7 +1362,7 @@ export default function App() {
                         <option value="Standup Pouches">Standup Pouches</option>
                         <option value="Zip Lock Bags">Zip Lock Bags</option>
                         <option value="Printed Polybags">Printed Polybags</option>
-                        <option value="Food Packaging">Food Packaging</option>
+
                         <option value="Courier Bags">Courier Bags</option>
                         <option value="Industrial Packaging">Industrial Packaging</option>
                         <option value="Other / Special Material">Other / Special Material</option>
